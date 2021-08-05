@@ -585,15 +585,14 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
 
 /* Slider */
 
-.slide {
+.slider {
 	display: flex;
 	flex-direction: row;
 }
 
 
-.slide img {
-	word-wrap: break-word;
-	width: 25%;
+.slider img {
+	width: 100%;
 }
 .slick-slide {
   margin: 0px 20px;
