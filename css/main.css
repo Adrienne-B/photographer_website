@@ -584,6 +584,17 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
 
 
 /* Slider */
+
+.slide {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.slide img {
+	word-wrap: break-word;
+	width: 25%;
+}
 .slick-slide {
   margin: 0px 20px;
 }
@@ -649,15 +660,15 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
 
 /* Media Queries */
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {*/
   .slick-arrow {
     width: 1rem;
     height: 1rem;
   }
-}
+/*}*/
 
-body {
-    background-color: #010101;
+/*body {
+    background-color: #010101;*/
   }
   
 .row {
