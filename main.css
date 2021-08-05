@@ -254,8 +254,72 @@ header .content-wrapper {
   margin: 0;	
 }
 
+header nav {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 1.125em;
+  font-weight: 700;
+  justify-content: space-around;
+	/*margin: 0 27px;*/
+  text-transform: uppercase;
+  width: 100%; /*Made the links have space.*/	
+}
+
+header nav ul li {
+  color: white;
+  font-size: 1.125em;
+}
+
+li a {
+	color: white;		/*Puts color to navigation's words*/
+	margin-left: 1.2rem;
+	margin-right: 1rem;
+}
+
+nav {							
+	position: fixed;
+	z-index: 100; /* had to use this so that the links were in front as the user scrolls down*/
+}
+
+nav li{
+		display: none;
+	/* put nav link that is for desktop as none so that the regular nav wont show in mobile. Hamburger should only appear*/	
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  display: inline-block;
+
+  position: relative;
+}
+
+li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/**End of codepen.io**/
+
+
+
 header {
-	background-image: url("../img/shot_1.png");
+	background-image: url("file:///C|/Users/Guest1/Desktop/photographer_website/img/shot_1.png");
 	background-position: center;
 	background-size: cover;
 	height: 51rem;
@@ -266,24 +330,24 @@ header {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 34rem;
-	margin-top: 2rem;
+	
 }
 
-#name_1 h1 {
+#name h1 {
 	font-family: 'Monoton', cursive;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	letter-spacing: 1.0rem;
 	line-height: 1rem;
 	padding-left: 1rem;
-	word-spacing: 0.20rem;
+	word-spacing: 0.3rem;
 }
 
-#job_title_1 h2 {
+#job_title h2 {
 	color: white;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 1.1rem;
 	align-content: center;
-	margin-left: 3rem;
+	margin-left: 4rem;
 	word-spacing: 1.0rem;
 }
 
@@ -307,7 +371,7 @@ button {
 	cursor: pointer;
 	height: 50px;
 	justify-content: center;
-	margin-left: 0.7rem;
+	margin-left: 3.0rem;
 	margin-top: -38rem;
 	transition: 500ms;
 	width: 150px;
@@ -368,114 +432,6 @@ nav a i {
 	padding-left: 2rem;
 	padding-right: 1rem;
 }*/
-
-header nav {
-  display: flex;
-  align-items: center;
-  flex-flow: row wrap;
-  font-size: 1.125em;
-  font-weight: 700;
-  justify-content: space-around;
-	/*margin: 0 27px;*/
-  text-transform: uppercase;
-  width: 100%; /*Made the links have space.*/	
-}
-
-/**codepen.io**/
-#menu-bar_2 {
-	margin-top: 5rem;
-}
-
-header nav {
-  display: flex;
-  align-items: center;
-  flex-flow: row wrap;
-  font-size: 1.125em;
-  font-weight: 700;
-  justify-content: space-around;
-	/*margin: 0 27px;*/
-	margin-top: 10rem;
-  text-transform: uppercase;
-  width: 100%; /*Made the links have space.*/	
-}
-
-header nav ul li {
-  color: white;
-  font-size: 1.125em;
-}
-
-li a {
-	color: white;		/*Puts color to navigation's words*/
-	margin-left: 1.2rem;
-	margin-right: 1rem;
-}
-
-nav {							
-	position: fixed;
-	z-index: 100; /* had to use this so that the links were in front as the user scrolls down*/
-}
-
-nav li{
-		display: none;
-	/* put nav link that is for desktop as none so that the regular nav wont show in mobile. Hamburger should only appear*/	
-}
-
-a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  
-  display: inline-block;
-
-  position: relative;
-}
-
-li a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: red;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
-a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: -23rem;
-  position: relative;
-}
-
-li a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: red;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
-/**End of codepen.io**/
-
 
 
 /*** End of the cover home page ***/
@@ -541,7 +497,7 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
 	text-decoration: underline;
 }
 
- .col-sm-4 center p center{
+ .col-sm-4 center p {
 	font-family: 'Rajdhani', sans-serif; /**FONT ISNT APPEARING**/
 }
 
@@ -549,7 +505,7 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
 
 
 .parallax {
-	background: url("./img/8.png") no-repeat;
+	background: url("file:///C|/Users/Guest1/Desktop/photographer_website/css/img/8.png") no-repeat;
 	/*background: url('img/earrings.png') no-repeat; /*temporary picture*/
 	background-attachment: fixed;
 	background-size: cover;
@@ -585,13 +541,112 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
 
 
 
+
+
+
+
+
+
+
+/* Slider */
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.logo-carousel {
+  overflow: inherit;
+  border-top: 1px solid #353535;
+  border-bottom: 1px solid #353535;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-track::before,
+.slick-track::after {
+  display: table;
+  content: '';
+}
+
+.slick-track::after {
+  clear: both;
+}
+
+.slick-track {
+  padding: 1rem 0;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
+  color: #fff;
+  filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
+  border: none;
+  width: 2rem;
+  height: 1.5rem;
+  text-indent: -10000px;
+  margin-top: -16px;
+  z-index: 99;
+}
+
+.slick-arrow.slick-next {
+  right: -40px;
+  transform: rotate(180deg);
+}
+
+.slick-arrow.slick-prev {
+  left: -40px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+body {
+    background-color: #010101;
+  }
+  
+.row {
+  overflow: hidden;
+}  
+
+/* JsFiddle Example only/don't use */
+.logo-carousel {
+  margin-top: 32px;
+}
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
   Price Mobile Page
    ========================================================================== */
-
-
 .banner {
-	background-image: url("../img/shot_1.png");
+	background-image: url("file:///C|/Users/Guest1/Desktop/photographer_website/img/shot_1.png");
 	background-position: center;
 	background-size: cover;
 	height: 16rem;
@@ -599,34 +654,13 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
 }
 
 /**codepen.io**/
-
-#name_2 h1 {
-	font-family: 'Monoton', cursive;
-	font-size: 1.3em;
-	letter-spacing: 1.0rem;
-	line-height: 1rem;
-	padding-right: 2rem;
-	word-spacing: 0.5rem;
+#menu-bar {
+	margin-top: -5rem;
 }
 
-#job_title_2 h2 {
-	color: greenyellow;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 1.1rem;
-	align-content: center;
-	/*margin-left: 7rem;*/
-	margin-top: 1rem;
-	margin-bottom: 5rem;
-	word-spacing: 1.0rem;
-}
 
-#menu-bar_2 {
-	margin-top: -73rem; /*margin-top: 1rem;*/
-	padding-left: 3rem;
-	color: aqua;
-}
 
-header .nav_2 {
+header nav {
   display: flex;
   align-items: center;
   flex-flow: row wrap;
@@ -639,10 +673,15 @@ header .nav_2 {
   width: 100%; /*Made the links have space.*/	
 }
 
+header nav ul li {
+  color: white;
+  font-size: 1.125em;
+}
+
 li a {
 	color: white;		/*Puts color to navigation's words*/
-	font-size: 0.9rem;
-	margin-right: 0.1rem;
+	margin-left: 1.2rem;
+	margin-right: 1rem;
 }
 
 nav {							
@@ -691,6 +730,40 @@ a {
   position: relative;
 }
 
+li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+#name h1 {
+	margin-bottom: -14rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+#job_title h2 {
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.1rem;
+	align-content: center;
+	margin-left: 4rem;
+	margin-top: 15rem;
+	word-spacing: 1.0rem;
+}
+
+
 /***End of banner***/
 
 
@@ -709,31 +782,15 @@ a {
 	margin-top: 1.2rem;
 }
 
-
-
-
 /* ==========================================================================
   Contact Mobile Page
    ========================================================================== */
-
-#job_title_2 h2 {
-	font-size: 1.0rem;
-	margin-left: 2rem;
-}
-
-.contact_title h2 {
-	font-size: 1.6rem;
-	margin-left: 10rem;
-	text-decoration: underline;
-}
-
 .contact-form {
 	display: flex;
 	flex-wrap: wrap;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 12rem;
-	margin-left: 1rem;
 }
 
 .contact-form h2 {
@@ -741,79 +798,6 @@ a {
 	margin-left: 12rem;
 	margin-top: -5rem;
 	text-decoration: underline;
-}
-
-
-#menu-bg_2  {
-	margin-top: 5rem;
-}
-
-header .nav_2 {
-  display: flex;
-  align-items: center;
-  flex-flow: row wrap;
-  font-size: 1.125em;
-  font-weight: 700;
-  justify-content: space-around;
-	/*margin: 0 27px;*/
-  text-transform: uppercase;
-  width: 100%; /*Made the links have space.*/	
-}
-
-header .nav_2 ul li {
-  color: white;
-  font-size: 0.25em;
-}
-
-li a {
-	color: white;		/*Puts color to navigation's words*/
-	margin-left: 1.2rem;
-	margin-right: 1rem;
-}
-
-nav_2 {							
-	position: fixed;
-	z-index: 100; /* had to use this so that the links were in front as the user scrolls down*/
-}
-
-nav li{
-		display: none;
-	/* put nav link that is for desktop as none so that the regular nav wont show in mobile. Hamburger should only appear*/	
-}
-
-a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  
-  display: inline-block;
-
-  position: relative;
-}
-
-li a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: red;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
-#name_2 h1 {
-
- margin-left: 1.6rem;
- font-family: 'Monoton', cursive;
-	font-size: 1.6em;
-	letter-spacing: 0.5rem;	
 }
 
 .textb {
@@ -826,8 +810,6 @@ a:hover:after {
 	color: white;
 	margin-bottom: 20px;
 	margin-left: 3rem;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-	
 }
 
 textarea {
@@ -841,13 +823,10 @@ textarea {
 	color: white;
 	margin-bottom: 20px;
 	margin-left: 3rem;
-	margin-right: 5rem;
-	padding-bottom: 6rem;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.btn_c {
-	/*width: 120px;
+.send btn_c {
+	width: 120px;
 	height: 40px;
 	margin-left: -8rem;
 	margin-bottom: 13rem;
@@ -856,49 +835,15 @@ textarea {
 	text-tranform: uppercase;
 	cursor: pointer;
 	border: 2px solid black;
-	transition .5s linear;*/
-	
-	
-	background: black;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-	color: #fff;
-	cursor: pointer;
-	font-size: 18px;
-	font-weight: bold;
-	height: 3rem;
-	margin-left: 7rem;
-	padding-top: 3rem;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	width: 160px;
-		
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-transition-property: box-shadow, transform;
-	transition-property: box-shadow, transform;
+	transition .5s linear;
 }
-	
-.btn_c:hover, .btn_c:focus, .btn_c:active {
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-	-webkit-transform: sale(1.1);
-	transform: scale(1.1);
-}	
+
+
 
 .map {
-	margin-left: -3rem;
+	margin-left: 3rem;
 	margin-top: -2rem;
 	margin-bottom: 5rem;
-}
-
-.map h4  {
-	margin-left: 6rem;
-}
-
-.map p {
-	margin-left: 6rem;
 }
 /* ==========================================================================
    Helper classes
@@ -988,11 +933,10 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-/*@media only screen and (min-width: 35em) {*/
+@media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 	
-@media only screen and (min-width:768px) {
-  /*Tablet styles here*/	
+	
 	
 	
 .intro {
@@ -1004,8 +948,7 @@ textarea {
 
 #name h1 {
 	font-family: 'Monoton', cursive;
-	font-size: 2em;
-	margin-top: -12rem;
+	font-size: 3em;
 	letter-spacing: 2rem;
 	line-height: 1rem;
 	word-spacing: 1.2rem;
@@ -1014,7 +957,6 @@ textarea {
 #job_title h2 {
 	color: white;
 	font-family: 'Bebas Neue', cursive;
-	font-size: 1.7rem;
 	align-content: center;
 	margin-left: 10rem;
 	word-spacing: 1.0rem;
@@ -1058,280 +1000,12 @@ textarea {
 .description {
 	margin-top: -1rem;
 }
+
+
+
+	
+	
 }
-
-
-
-
-/* ==========================================================================
-  Price Tablet Page
-   ========================================================================== */
-.banner {
-	background-image: url("../img/shot_1.png");
-	background-position: center;
-	background-size: cover;
-	height: 16rem;
-	width: 100%;
-}
-
-/**codepen.io**/
-#menu-bar {
-	margin-top: 5rem;
-}
-
-header nav {
-  display: flex;
-  align-items: center;
-  flex-flow: row wrap;
-  font-size: 1.125em;
-  font-weight: 700;
-  justify-content: space-around;
-	/*margin: 0 27px;*/
-	margin-top: 10rem;
-  text-transform: uppercase;
-  width: 100%; /*Made the links have space.*/	
-}
-
-header nav ul li {
-  color: white;
-  font-size: 1.125em;
-}
-
-li a {
-	color: white;		/*Puts color to navigation's words*/
-	margin-left: 1.2rem;
-	margin-right: 1rem;
-}
-
-nav {							
-	position: fixed;
-	z-index: 100; /* had to use this so that the links were in front as the user scrolls down*/
-}
-
-nav li{
-		display: none;
-	/* put nav link that is for desktop as none so that the regular nav wont show in mobile. Hamburger should only appear*/	
-}
-
-a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  
-  display: inline-block;
-
-  position: relative;
-}
-
-li a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: red;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
-a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: -23rem;
-  position: relative;
-}
-
-li a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: red;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
-#name h1 {
-	margin-bottom: -14rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
-}
-
-#job_title h2 {
-	color: white;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 1.3rem;
-	align-content: center;
-	margin-left: 10rem;
-	margin-top: 15rem;
-	word-spacing: 1.0rem;
-}
-
-
-/***End of banner***/
-
-
-
-.card {
-	margin-left: 0rem;
-
-}
-
-.display-4 {
-	color: black;
-	margin-left: -1rem;
-}
-
-.lead {
-	margin-right: 2rem;
-}
-
-.btn-block, .btn-lg, .btn-outline-primary {
-	margin-left: -1rem;
-	margin-bottom: 2rem;
-	margin-top: 1.2rem;
-}	
-}
-
-
-/* ==========================================================================
-  Contact Tablet Page
-   ========================================================================== */
-
-#menu-bar {
-	margin-top: 5rem;
-}
-
-#menu-bg_2 {
-	margin-top: -13rem;
-}
-
-#job_title h2 {
-	color: white;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 1.4rem;
-	align-content: center;
-	margin-left: 9rem;
-	margin-top: 15rem;
-	word-spacing: 1.0rem;
-}
-
-.contact_title h2 {
-	color: black;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 2.3rem;
-	margin-left: 12rem;
-	margin-right: 4rem;
-	margin-top: -3rem;
-	margin-bottom: 5rem;
-}
-
-.contact-form {
-	display: flex;
-	flex-wrap: wrap;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-bottom: 22rem;
-	margin-left: 3rem;
-}
-
-/*.contact-form h2 {
-	font-family: 'Bebas Neue', cursive;
-	font-size: 2.7rem;
-	margin-left: 20rem;
-	margin-top: -5rem;
-	text-decoration: underline;
-}*/
-
-.textb {
-	width: calc(70% -10px);
-	height: 50px;
-	padding: 12px;
-	padding-left: 5rem;
-	background-color: black;
-	border: none;
-	color: white;
-	margin-bottom: 20px;
-	margin-left: 3rem;
-}
-
-#email {
-	margin-right: 6rem;
-	padding-right: 0rem;
-}
-textarea {
-	width: 80%;
-	max-height: 430px;
-	min-height: 200px;
-	resize: vertical;
-	padding-left: 12px;
-	background-color: black;
-	border: none;
-	color: white;
-	margin-bottom: 20px;
-	margin-left: 3rem;
-}
-
-.send btn_c {
-	width: 120px;
-	height: 40px;
-	margin-left: -8rem;
-	margin-bottom: 13rem;
-	background-color: red;
-	color: white;
-	text-tranform: uppercase;
-	cursor: pointer;
-	border: 2px solid black;
-	transition .5s linear;
-}
-
-.map h4 p {
-	margin-top: -9rem;
-}
-
-.map h4 {
-   font-size: 1.5rem;
-}
-
-.map p {
-  font-size: 1.5rem;
-}
-
- .map iframe{
-	margin-left: 2rem;
-	margin-right: 4rem;
-	margin-top: 3rem;
-	margin-bottom: 5rem;
-	width: 46rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
