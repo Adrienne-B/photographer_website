@@ -1,5 +1,6 @@
-$(document).ready(function() {
-  $('.logo-carousel').slick({
+
+document.querySelector(document).ready(function() {
+  document.querySelector('.logo-carousel').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
@@ -20,3 +21,4 @@ $(document).ready(function() {
     }]
   });
 });
+

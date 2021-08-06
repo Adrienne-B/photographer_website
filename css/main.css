@@ -592,7 +592,8 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
 
 
 .slider img {
-	width: 100%;
+	width: 180%;
+	padding-left: 5rem;
 }
 .slick-slide {
   margin: 0px 20px;
@@ -679,7 +680,9 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
   margin-top: 32px;
 }
 
-
+.parallax {
+	background: url("img/banner_2.png");
+}
 
 
 
@@ -713,7 +716,7 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
 	font-family: 'Bebas Neue', cursive;
 	font-size: 1.1rem;
 	align-content: center;
-	/*margin-left: 7rem;*/
+	margin-left: 7rem;
 	margin-top: 1rem;
 	margin-bottom: 5rem;
 	word-spacing: 1.0rem;
@@ -722,18 +725,18 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
 #menu-bar_2 {
 	margin-top: -73rem; /*margin-top: 1rem;*/
 	padding-left: 3rem;
-	color: aqua;
 }
 
 header .nav_2 {
   display: flex;
   align-items: center;
   flex-flow: row wrap;
-  font-size: 1.125em;
-  font-weight: 700;
+  font-size: 1.1em;
+ /* font-weight: 700;*/
   justify-content: space-around;
 	/*margin: 0 27px;*/
 	margin-top: 10rem;
+	margin-right: 10rem;
   text-transform: uppercase;
   width: 100%; /*Made the links have space.*/	
 }
@@ -741,7 +744,6 @@ header .nav_2 {
 li a {
 	color: white;		/*Puts color to navigation's words*/
 	font-size: 0.9rem;
-	margin-right: 0.1rem;
 }
 
 nav {							
@@ -750,8 +752,9 @@ nav {
 }
 
 nav li{
-		display: none;
+	display: none;
 	/* put nav link that is for desktop as none so that the regular nav wont show in mobile. Hamburger should only appear*/	
+	padding-right: 5rem;
 }
 
 a {
@@ -815,6 +818,10 @@ a {
   Contact Mobile Page
    ========================================================================== */
 
+#name_1 {
+	margin-top: 13rem;
+}
+
 #job_title_2 h2 {
 	font-size: 1.0rem;
 	margin-left: 2rem;
@@ -822,7 +829,7 @@ a {
 
 .contact_title h2 {
 	font-size: 1.6rem;
-	margin-left: 10rem;
+	margin-left: 12rem;
 	text-decoration: underline;
 }
 
@@ -958,7 +965,7 @@ textarea {
 	transition .5s linear;*/
 	
 	
-	background: black;
+	background: red;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 	color: #fff;
@@ -990,6 +997,7 @@ textarea {
 	margin-left: -3rem;
 	margin-top: -2rem;
 	margin-bottom: 5rem;
+	margin-top: 22rem;
 }
 
 .map h4  {
@@ -1101,16 +1109,16 @@ textarea {
 	
 }
 
-#name h1 {
+#name_1 h1 {
 	font-family: 'Monoton', cursive;
 	font-size: 2em;
-	margin-top: -12rem;
+	margin-top: -30rem;
 	letter-spacing: 2rem;
 	line-height: 1rem;
-	word-spacing: 1.2rem;
+	word-spacing: 0.2rem;
 }
 
-#job_title h2 {
+#job_title_1 h2 {
 	color: white;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 1.7rem;
@@ -1119,6 +1127,85 @@ textarea {
 	word-spacing: 1.0rem;
 }
 
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	display: flex;
+	align-items: center;
+	background: none;
+	border: 2px solid darkslateblue;		/*#89db84*/
+	border-radius: 50px;
+	cursor: pointer;
+	height: 50px;
+	justify-content: center;
+	margin-left: 14rem;
+	margin-top: -38rem;
+	transition: 500ms;
+	width: 150px;
+}
+
+span, svg {
+	position: absolute;
+	color: darkslateblue;					/*#89db84*/
+	fill: transparent;
+}
+
+.noselect span {
+	font-size: 1.5rem;
+	text-transform: capitalize;
+}
+
+button:hover {
+	font-size: 14px;
+	margin-left: 8rem;
+}
+
+button:focus {
+	outline: none;
+	border: 2px solid transparent;
+	width: 50px;
+	border-left: 2px solid #89db84;
+	border-bottom: 2px solid #89db84;
+	animation: spin 2s 500ms forwards;
+}
+
+button:focus span {
+	color: transparent;
+}
+
+button:focus svg {
+	animation: check 500ms 2300ms forwards;
+}
+
+@keyframes spin {
+	80%{border: 2px solid transparent;
+			border-left: 2px solid #89db84;}
+	100%{transform: rotate(1080deg);
+		border: 2px solid #89db84;}
+}
+
+@keyframes check {
+	to{fill: #89db84}
+}
+
+@keyframes circle {
+	to{border: 2px solid #89db84;}
+}	
+	
+.nav {
+	font-size: 2rem;	
+}	
+	
+	
 /*** End of the cover home page ***/
 
 .about {
@@ -1136,18 +1223,19 @@ textarea {
 }
 
 .about_wrapper img {
-	height: 30rem;
+	height: 35rem;
 	justify-content: center;
 	padding-bottom: 2rem;
 	padding-left: 8rem;
-	padding-top: 2rem;
-	width: 23rem;
+	padding-top: 1rem;
+	margin-top: -7rem;
+	width: 30rem;
 }
 
 .about_wrapper h2 {
 	color: black;
-	font-family: 'Raleway', sans-serif;
-	font-style:italic;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3rem;
 	margin-left: 1rem;
 	padding-bottom: 1rem;
 	padding-top: 6rem;
@@ -1155,8 +1243,24 @@ textarea {
 }
 
 .description {
+	font-size: 1.5rem;
 	margin-top: -1rem;
+	margin-left: 4rem;
+	margin-right: 4rem;
 }
+	
+.nav {
+	margin-left: 5rem;	
+}	
+	
+.row h2 {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3rem;
+}	
+
+	
+.img-styling {
+height: 46vh;		/*Allowd for all pictures to be the same height.*/
 }
 
 
@@ -1165,6 +1269,7 @@ textarea {
 /* ==========================================================================
   Price Tablet Page
    ========================================================================== */
+
 .banner {
 	background-image: url("../img/shot_1.png");
 	background-position: center;
@@ -1174,8 +1279,24 @@ textarea {
 }
 
 /**codepen.io**/
-#menu-bar {
-	margin-top: 5rem;
+
+
+#name_2 h1 {
+	font-size: 1.5rem;
+	margin-left: 4rem;
+	margin-bottom: 23rem;
+	letter-spacing: 0.5rem;
+}
+
+#job_title_2 h2 {
+	font-size: 1.0rem;
+	margin-top: -22rem;
+	margin-left: 5rem;
+}
+
+#menu-bar_2 nav {
+	margin-top: -28rem;
+	margin-left: 1rem;
 }
 
 header nav {
@@ -1266,19 +1387,21 @@ a:hover:after {
   left: 0; 
 }
 
-#name h1 {
-	margin-bottom: -14rem;
+#name_2 h1 {
+	font-size: 3.0rem;
+	margin-bottom: 63rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
+	letter-spacing: 0.3rem;
 }
 
-#job_title h2 {
-	color: white;
+#job_title_2 h2 {
+	color: yellowgreen;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 1.3rem;
 	align-content: center;
 	margin-left: 10rem;
-	margin-top: 15rem;
+	margin-bottom: 35rem;
 	word-spacing: 1.0rem;
 }
 
@@ -1289,6 +1412,7 @@ a:hover:after {
 
 .card {
 	margin-left: 0rem;
+	margin-bottom : 13rem;
 
 }
 
@@ -1306,37 +1430,37 @@ a:hover:after {
 	margin-bottom: 2rem;
 	margin-top: 1.2rem;
 }	
-}
 
 
 /* ==========================================================================
   Contact Tablet Page
    ========================================================================== */
 
-#menu-bar {
-	margin-top: 5rem;
-}
 
-#menu-bg_2 {
-	margin-top: -13rem;
+#name h1 {
+	margin-bottom: -14rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 #job_title h2 {
 	color: white;
 	font-family: 'Bebas Neue', cursive;
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	align-content: center;
-	margin-left: 9rem;
+	margin-left: 10rem;
 	margin-top: 15rem;
 	word-spacing: 1.0rem;
 }
 
+
+
 .contact_title h2 {
 	color: black;
 	font-family: 'Bebas Neue', cursive;
-	font-size: 2.3rem;
-	margin-left: 12rem;
-	margin-right: 4rem;
+	font-size: 3rem;
+	/*margin-left: 21rem;*/
+	margin-left: 18rem;
 	margin-top: -3rem;
 	margin-bottom: 5rem;
 }
@@ -1371,11 +1495,11 @@ a:hover:after {
 }
 
 #email {
-	margin-right: 6rem;
+	margin-right: 5.0rem;
 	padding-right: 0rem;
 }
 textarea {
-	width: 80%;
+	width: 82%;
 	max-height: 430px;
 	min-height: 200px;
 	resize: vertical;
@@ -1387,11 +1511,12 @@ textarea {
 	margin-left: 3rem;
 }
 
-.send btn_c {
+ .btn_c {
 	width: 120px;
 	height: 40px;
-	margin-left: -8rem;
+	margin-left: 15rem;
 	margin-bottom: 13rem;
+	 padding-bottom: 2.1rem;
 	background-color: red;
 	color: white;
 	text-tranform: uppercase;
@@ -1405,7 +1530,7 @@ textarea {
 }
 
 .map h4 {
-   font-size: 1.5rem;
+   font-size: 1.7rem;
 }
 
 .map p {
@@ -1417,7 +1542,7 @@ textarea {
 	margin-right: 4rem;
 	margin-top: 3rem;
 	margin-bottom: 5rem;
-	width: 46rem;
+	width: 66rem;
 }
 
 
