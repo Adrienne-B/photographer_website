@@ -1283,20 +1283,27 @@ height: 46vh;		/*Allowd for all pictures to be the same height.*/
 
 #name_2 h1 {
 	font-size: 1.5rem;
-	margin-left: 4rem;
+	margin-left: 6rem;
 	margin-bottom: 23rem;
 	letter-spacing: 0.5rem;
 }
+	
+.intro {
+	display: flex;
+	justify-content: center;
+	margin-bottom: -4rem;
+}	
 
 #job_title_2 h2 {
-	font-size: 1.0rem;
-	margin-top: -22rem;
+	font-size: 1.4rem;
+	margin-top: -62rem;
 	margin-left: 5rem;
 }
 
-#menu-bar_2 nav {
-	margin-top: -28rem;
+#menu-bar_2  {
+	margin-top: -6rem;
 	margin-left: 1rem;
+	margin-right: 7rem;
 }
 
 header nav {
@@ -1395,13 +1402,10 @@ a:hover:after {
 	letter-spacing: 0.3rem;
 }
 
-#job_title_2 h2 {
+h2 {
 	color: yellowgreen;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 1.3rem;
-	align-content: center;
-	margin-left: 10rem;
-	margin-bottom: 35rem;
 	word-spacing: 1.0rem;
 }
 
@@ -1437,22 +1441,128 @@ a:hover:after {
    ========================================================================== */
 
 
-#name h1 {
-	margin-bottom: -14rem;
+	
+	
+#name_2 h1 {
+	font-size: 1.5rem;
+	margin-left: 4rem;
+	margin-bottom: 23rem;
+	letter-spacing: 0.5rem;
+}
+	
+.intro {
+	display: flex;
+	justify-content: center;
+	margin-bottom: -4rem;
+}	
+
+#job_title_2 h2 {
+	font-size: 1.4rem;
+	margin-top: -62rem;
+	margin-left: 5rem;
+}
+
+#menu-bar_2  {
+	margin-top: -6rem;
 	margin-left: 1rem;
+	margin-right: 7rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 1.125em;
+  font-weight: 700;
+  justify-content: space-around;
+	/*margin: 0 27px;*/
+	margin-top: 10rem;
+  text-transform: uppercase;
+  width: 100%; /*Made the links have space.*/	
+}
+
+header nav ul li {
+  color: white;
+  font-size: 1.125em;
+}
+
+li a {
+	color: white;		/*Puts color to navigation's words*/
+	margin-left: 1.2rem;
 	margin-right: 1rem;
 }
 
-#job_title h2 {
-	color: white;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 1.3rem;
-	align-content: center;
-	margin-left: 10rem;
-	margin-top: 15rem;
-	word-spacing: 1.0rem;
+nav {							
+	position: fixed;
+	z-index: 100; /* had to use this so that the links were in front as the user scrolls down*/
 }
 
+nav li{
+		display: none;
+	/* put nav link that is for desktop as none so that the regular nav wont show in mobile. Hamburger should only appear*/	
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  display: inline-block;
+
+  position: relative;
+}
+
+li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: -23rem;
+  position: relative;
+}
+
+li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+#name_2 h1 {
+	font-size: 3.0rem;
+	margin-bottom: 63rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	letter-spacing: 0.3rem;
+}
 
 
 .contact_title h2 {
@@ -1544,17 +1654,340 @@ textarea {
 	margin-bottom: 5rem;
 	width: 66rem;
 }
+}
+
+
+
+/* ==========================================================================
+		Home Desktop Page
+   ========================================================================== */
+
+
+
+	
+@media only screen and (min-width:1200px) {
+  /*Tablet styles here*/	
+	
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	display: flex;
+	align-items: center;
+	background: none;
+	border: 2px solid darkslateblue;		/*#89db84*/
+	border-radius: 50px;
+	cursor: pointer;
+	height: 50px;
+	justify-content: center;
+	margin-left: 14rem;
+	margin-top: -38rem;
+	transition: 500ms;
+	width: 150px;
+}
+
+span, svg {
+	position: absolute;
+	color: darkslateblue;					/*#89db84*/
+	fill: transparent;
+}
+
+.noselect span {
+	font-size: 1.5rem;
+	text-transform: capitalize;
+}
+
+button:hover {
+	font-size: 14px;
+	margin-left: 8rem;
+}
+
+button:focus {
+	outline: none;
+	border: 2px solid transparent;
+	width: 50px;
+	border-left: 2px solid #89db84;
+	border-bottom: 2px solid #89db84;
+	animation: spin 2s 500ms forwards;
+}
+
+button:focus span {
+	color: transparent;
+}
+
+button:focus svg {
+	animation: check 500ms 2300ms forwards;
+}
+
+@keyframes spin {
+	80%{border: 2px solid transparent;
+			border-left: 2px solid #89db84;}
+	100%{transform: rotate(1080deg);
+		border: 2px solid #89db84;}
+}
+
+@keyframes check {
+	to{fill: #89db84}
+}
+
+@keyframes circle {
+	to{border: 2px solid #89db84;}
+}	
+	
+.nav {
+	font-size: 2rem;	
+}	
+	
+	
+/*** End of the cover home page ***/
+
+.about {
+	margin-top: 20rem;
+}
+
+
+.about {
+	display: flex;
+	flex-flow: row wrap;	
+}
+
+.about_wrapper {
+	margin-top: 1rem;
+}
+
+.about_wrapper img {
+	height: 35rem;
+	justify-content: center;
+	padding-bottom: 2rem;
+	padding-left: 8rem;
+	padding-top: 1rem;
+	margin-top: -7rem;
+	width: 30rem;
+}
+
+.about_wrapper h2 {
+	color: black;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3rem;
+	margin-left: 1rem;
+	padding-bottom: 1rem;
+	padding-top: 6rem;
+	text-align: center;
+}
+
+.description {
+	font-size: 1.5rem;
+	margin-top: -1rem;
+	margin-left: 4rem;
+	margin-right: 4rem;
+}
+	
+.nav {
+	margin-left: 5rem;	
+}	
+	
+.row h2 {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3rem;
+}	
+
+	
+.img-styling {
+height: 46vh;		/*Allowd for all pictures to be the same height.*/
+}
 
 
 
 
+/* ==========================================================================
+		Price Desktop Page
+   ========================================================================== */
 
 
+#menu-bar_2  {
+	margin-top: -6rem;
+	margin-left: 5rem;
+	margin-right: 7rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 1.125em;
+  font-weight: 700;
+  justify-content: space-around;
+	/*margin: 0 27px;*/
+	margin-top: 10rem;
+  text-transform: uppercase;
+  width: 100%; /*Made the links have space.*/	
+}
+
+header nav ul li {
+  color: white;
+  font-size: 1.125em;
+}
+
+li a {
+	color: white;		/*Puts color to navigation's words*/
+	margin-left: 1.2rem;
+	margin-right: 1rem;
+}
+
+nav {							
+	position: fixed;
+	z-index: 100; /* had to use this so that the links were in front as the user scrolls down*/
+}
+
+nav li{
+		display: none;
+	/* put nav link that is for desktop as none so that the regular nav wont show in mobile. Hamburger should only appear*/	
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  display: inline-block;
+
+  position: relative;
+}
+
+li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: -23rem;
+  position: relative;
+}
+
+li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
 
 
+/* ==========================================================================
+		Contact Desktop Page
+   ========================================================================== */
+	
+	
+.contact_title h2 {
+	color: black;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3rem;
+	margin-left: 33rem;
+	margin-top: -3rem;
+	margin-bottom: 5rem;
+}
 
+.contact-form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 22rem;
+	margin-left: 3rem;
+}
 
+.textb {
+	width: calc(70% -10px);
+	height: 50px;
+	padding: 12px;
+	padding-left: 5rem;
+	background-color: black;
+	border: none;
+	color: white;
+	margin-bottom: 20px;
+	margin-left: 3rem;
+}
 
+#email {
+	margin-right: 5.0rem;
+	padding-right: 0rem;
+}
+textarea {
+	width: 82%;
+	max-height: 430px;
+	min-height: 200px;
+	resize: vertical;
+	padding-left: 12px;
+	background-color: black;
+	border: none;
+	color: white;
+	margin-bottom: 20px;
+	margin-left: 3rem;
+}
+
+ .btn_c {
+	width: 120px;
+	height: 40px;
+	margin-left: 15rem;
+	margin-bottom: 13rem;
+	 padding-bottom: 2.1rem;
+	background-color: red;
+	color: white;
+	text-tranform: uppercase;
+	cursor: pointer;
+	border: 2px solid black;
+	transition .5s linear;
+}
+
+.map h4 p {
+	margin-top: -9rem;
+}
+
+.map h4 {
+   font-size: 1.7rem;
+}
+
+.map p {
+  font-size: 1.5rem;
+}	
+	
+.map iframe {
+	width: 100%;	
+}
 
 
 @media print,
