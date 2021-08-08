@@ -258,15 +258,16 @@ header {
 	background-image: url("../img/shot_1.png");
 	background-position: center;
 	background-size: cover;
-	height: 51rem;
+	height: 61rem;
 	width: 100%;
+	
 }
 
 .intro {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 34rem;
-	margin-top: 2rem;
+	margin-bottom: -4rem;
+	margin-top: -32rem;
 }
 
 #name_1 h1 {
@@ -279,7 +280,7 @@ header {
 }
 
 #job_title_1 h2 {
-	color: white;
+	color: yellowgreen;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 1.1rem;
 	align-content: center;
@@ -307,8 +308,8 @@ button {
 	cursor: pointer;
 	height: 50px;
 	justify-content: center;
-	margin-left: 0.7rem;
-	margin-top: -38rem;
+	margin-left: 3rem;
+	margin-top: 15rem;
 	transition: 500ms;
 	width: 150px;
 }
@@ -382,8 +383,9 @@ header nav {
 }
 
 /**codepen.io**/
-#menu-bar_2 {
-	margin-top: 5rem;
+#menu-bar {
+	margin-top: -15rem;
+	margin-right: 3rem;
 }
 
 header nav {
@@ -472,6 +474,390 @@ li a:after {
 a:hover:after { 
   width: 100%; 
   left: 0; 
+}
+
+/**End of codepen.io**/
+
+
+
+/*** End of the cover home page ***/
+
+
+.description {
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: -5rem;
+	text-align: justify;
+}
+
+
+.about {
+	display: none;
+	flex-flow: row wrap;	
+}
+
+.about_wrapper {
+	margin-top: 5rem;
+}
+
+.about_wrapper img {
+	height: 36rem;
+	justify-content: center;
+	padding-bottom: 3rem;
+	margin-left: 5rem;
+	padding-top: 2rem;
+	width: 20rem;
+}
+
+.description h2 {
+	color: black;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 2.4rem;
+	/*font-family: 'Raleway', sans-serif;*/
+	margin-left: 0rem;
+	padding-bottom: 1rem;
+	padding-top: 6rem;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.description p {
+ 	margin-right: 3rem;
+}
+
+.img-styling {
+height: 80vh;		/*Allowd for all pictures to be the same height.*/
+}
+
+/*** End of About section ***/
+
+.row h2 {
+	color: black;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 2.4rem;
+	/*font-family: 'Raleway', sans-serif;*/
+	margin-left: 0rem;
+	padding-bottom: 1rem;
+	padding-top: 6rem;
+	text-align: center;
+	text-decoration: underline;
+}
+
+ .col-sm-4 center p center{
+	font-family: 'Rajdhani', sans-serif; /**FONT ISNT APPEARING**/
+}
+
+/*-------END OF Portfolio------*/
+
+
+.parallax {
+	background: url("./img/8.png") no-repeat;
+	/*background: url('img/earrings.png') no-repeat; /*temporary picture*/
+	background-attachment: fixed;
+	background-size: cover;
+	height: 230px;
+}
+
+.motto_1 p {
+	font-size: 0.89em;
+	font-family: 'Syncopate', sans-serif;
+	color: white;
+	/*this will be in white color*/
+	margin-top: 54px;
+	text-align: center;
+}
+
+.motto_1 h4 {
+	font-size: 0.74em;
+	font-family: 'Syncopate', sans-serif;
+	color: white;
+	text-align: right;
+	padding-right: 45px;
+}
+
+.motto_1 .overlay {
+	background-color: rgba(0, 0, 0, 0.8);
+	background-size: 100px;
+	position: absolute;
+	height: 230px;
+	width: 100%;
+}
+
+
+
+/* Slider */
+
+.slider {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.slider img {
+	width: 180%;
+	padding-left: 5rem;
+}
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.logo-carousel {
+  overflow: inherit;
+  border-top: 1px solid #353535;
+  border-bottom: 1px solid #353535;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-track::before,
+.slick-track::after {
+  display: table;
+  content: '';
+}
+
+.slick-track::after {
+  clear: both;
+}
+
+.slick-track {
+  padding: 1rem 0;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
+  color: #fff;
+  filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
+  border: none;
+  width: 2rem;
+  height: 1.5rem;
+  text-indent: -10000px;
+  margin-top: -16px;
+  z-index: 99;
+}
+
+.slick-arrow.slick-next {
+  right: -40px;
+  transform: rotate(180deg);
+}
+
+.slick-arrow.slick-prev {
+  left: -40px;
+}
+
+/* Media Queries */
+
+/*@media (max-width: 768px) {*/
+  .slick-arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+/*}*/
+
+/*body {
+    background-color: #010101;*/
+  }
+  
+.row {
+  overflow: hidden;
+}  
+
+/* JsFiddle Example only/don't use */
+.logo-carousel {
+  margin-top: 32px;
+}
+
+.parallax {
+	background: url("img/banner_2.png");
+}
+
+/* ==========================================================================
+  About Mobile Page
+   ========================================================================== */
+
+
+
+
+footer {
+  flex-direction: column;	
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  margin: 50px 0;	
+  width: 55%;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;	
+  width: 40px;
+  height: 40px;	
+					/*margin-right: 2em;*/
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+	
+}
+footer .copyright {
+  margin: 20px 0;
+}
+.intro_2 {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 34rem;
+	margin-top: 2rem;
+}
+
+#name_2 h1 {
+	font-family: 'Monoton', cursive;
+	font-size: 1.3em;
+	letter-spacing: 1.0rem;
+	line-height: 1rem;
+	padding-left: 1rem;
+	word-spacing: 0.20rem;
+}
+
+#job_title_2 h2 {
+	color: yellowgreen;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.1rem;
+	align-content: center;
+	margin-left: 3rem;
+	word-spacing: 1.0rem;
+}
+
+
+.banner {
+	background-image: url("../img/shot_1.png");
+	background-position: center;
+	background-size: cover;
+	height: 16rem;
+	width: 100%;
+}
+
+#name_2 h1 {
+	font-family: 'Monoton', cursive;
+	font-size: 1.3em;
+	letter-spacing: 1.0rem;
+	line-height: 1rem;
+	padding-right: 2rem;
+	word-spacing: 0.5rem;
+}
+
+#job_title_2 h2 {
+	color: greenyellow;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.1rem;
+	align-content: center;
+	margin-left: 7rem;
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+	word-spacing: 1.0rem;
+}
+
+#menu-bar_2 {
+	margin-top: -73rem; /*margin-top: 1rem;*/
+	padding-left: 3rem;
+}
+
+header .nav_2 {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 1.1em;
+ /* font-weight: 700;*/
+  justify-content: space-around;
+	/*margin: 0 27px;*/
+	margin-top: 10rem;
+	margin-right: 10rem;
+  text-transform: uppercase;
+  width: 100%; /*Made the links have space.*/	
+}
+
+li a {
+	color: white;		/*Puts color to navigation's words*/
+	font-size: 0.9rem;
+}
+
+nav {							
+	position: fixed;
+	z-index: 100; /* had to use this so that the links were in front as the user scrolls down*/
+}
+
+nav li{
+	display: none;
+	/* put nav link that is for desktop as none so that the regular nav wont show in mobile. Hamburger should only appear*/	
+	padding-right: 5rem;
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  display: inline-block;
+
+  position: relative;
+}
+
+li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: -23rem;
+  position: relative;
 }
 
 /**End of codepen.io**/
@@ -669,8 +1055,7 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
 
 /*body {
     background-color: #010101;*/
-  }
-  
+ 
 .row {
   overflow: hidden;
 }  
@@ -680,9 +1065,7 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
   margin-top: 32px;
 }
 
-.parallax {
-	background: url("img/banner_2.png");
-}
+
 
 
 
@@ -1105,21 +1488,20 @@ textarea {
 .intro {
 	display: flex;
 	justify-content: center;
-	margin-bottom: -24rem;
-	
+	margin-top: 8rem;
 }
 
 #name_1 h1 {
 	font-family: 'Monoton', cursive;
 	font-size: 2em;
-	margin-top: -30rem;
+	margin-top: -18rem;
 	letter-spacing: 2rem;
 	line-height: 1rem;
 	word-spacing: 0.2rem;
 }
 
 #job_title_1 h2 {
-	color: white;
+	color: yellowgreen;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 1.7rem;
 	align-content: center;
@@ -1147,8 +1529,8 @@ button {
 	cursor: pointer;
 	height: 50px;
 	justify-content: center;
-	margin-left: 14rem;
-	margin-top: -38rem;
+	margin-left: 7rem;
+	margin-top: 8rem;
 	transition: 500ms;
 	width: 150px;
 }
@@ -1247,6 +1629,12 @@ button:focus svg {
 	margin-top: -1rem;
 	margin-left: 4rem;
 	margin-right: 4rem;
+}
+	
+#menu-bar {
+	margin-top: 15rem;
+	margin-right: 8rem;
+	padding-left: 4rem;
 }
 	
 .nav {
@@ -1666,8 +2054,51 @@ textarea {
 
 	
 @media only screen and (min-width:1200px) {
-  /*Tablet styles here*/	
+
+/* =========================================================================FOOTER FOR ALL PAGES REGARDING DESKTOP
+   ========================================================================== */
 	
+	
+	
+  /* FOOTER */
+ footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  footer .footer-content {
+    display: flex;
+	flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+	width: 100%;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+ }
+
+ footer p {
+      line-height: 1.285;
+}	
+footer .social-icons {
+	display: flex;
+	width: 12.5em;
+	justify-content: space-between;
+ }
+  
+ footer .copyright {
+    width: 100%;
+ }
+	
+.intro {
+	margin-left: 5.2rem;	
+}	
 
 .noselect {
   -webkit-touch-callout: none;
@@ -1688,8 +2119,8 @@ button {
 	cursor: pointer;
 	height: 50px;
 	justify-content: center;
-	margin-left: 14rem;
-	margin-top: -38rem;
+	margin-left: 28rem;
+	margin-bottom: 39rem;
 	transition: 500ms;
 	width: 150px;
 }
@@ -1742,11 +2173,12 @@ button:focus svg {
 	to{border: 2px solid #89db84;}
 }	
 	
-.nav {
-	font-size: 2rem;	
+	
+#menu-bar .nav {
+	margin-bottom: -16rem;
+	margin-left: 1rem;
+	margin-right: 7rem;
 }	
-	
-	
 /*** End of the cover home page ***/
 
 .about {
@@ -1765,7 +2197,7 @@ button:focus svg {
 
 .about_wrapper img {
 	height: 35rem;
-	justify-content: center;
+	
 	padding-bottom: 2rem;
 	padding-left: 8rem;
 	padding-top: 1rem;
@@ -1790,10 +2222,6 @@ button:focus svg {
 	margin-right: 4rem;
 }
 	
-.nav {
-	margin-left: 5rem;	
-}	
-	
 .row h2 {
 	font-family: 'Bebas Neue', cursive;
 	font-size: 3rem;
@@ -1803,8 +2231,6 @@ button:focus svg {
 .img-styling {
 height: 46vh;		/*Allowd for all pictures to be the same height.*/
 }
-
-
 
 
 /* ==========================================================================
