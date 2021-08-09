@@ -515,7 +515,7 @@ footer .copyright {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 34rem;
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 
 #name_2 h1 {
@@ -1277,7 +1277,10 @@ textarea {
 	word-spacing: 1.0rem;
 }
 
-
+.noselect {
+	margin-top: 34rem;	
+}
+	
 .noselect {
   -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -1619,7 +1622,7 @@ h2 {
 }
 
 #menu-bar_2  {
-	margin-top: -6rem;
+	margin-top: -80rem;
 	margin-left: 1rem;
 	margin-right: 7rem;
 }
@@ -1725,8 +1728,7 @@ a:hover:after {
 	color: black;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 3rem;
-	/*margin-left: 21rem;*/
-	margin-left: 18rem;
+	margin-left: 19rem;
 	margin-top: -3rem;
 	margin-bottom: 5rem;
 }
@@ -1739,14 +1741,6 @@ a:hover:after {
 	margin-bottom: 22rem;
 	margin-left: 3rem;
 }
-
-/*.contact-form h2 {
-	font-family: 'Bebas Neue', cursive;
-	font-size: 2.7rem;
-	margin-left: 20rem;
-	margin-top: -5rem;
-	text-decoration: underline;
-}*/
 
 .textb {
 	width: calc(70% -10px);
@@ -1780,9 +1774,11 @@ textarea {
  .btn_c {
 	width: 120px;
 	height: 40px;
-	margin-left: 15rem;
+	margin-left: 14rem;
 	margin-bottom: 13rem;
-	 padding-bottom: 2.1rem;
+	padding-bottom: 2.1rem;
+	padding-left: 5rem; 
+	padding-right: 8rem;  
 	background-color: red;
 	color: white;
 	text-tranform: uppercase;
@@ -1791,24 +1787,21 @@ textarea {
 	transition .5s linear;
 }
 
-.map h4 p {
-	margin-top: -9rem;
-}
-
 .map h4 {
-   font-size: 1.7rem;
+   font-size: 2.4rem;
+	margin-left: 19rem;
 }
 
 .map p {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
+  margin-left: 16rem;	
 }
 
  .map iframe{
-	margin-left: 2rem;
 	margin-right: 4rem;
 	margin-top: 3rem;
 	margin-bottom: 5rem;
-	width: 66rem;
+	width: 100%;
 }
 }
 
@@ -1865,9 +1858,13 @@ footer .social-icons {
  }
 	
 .intro {
-	margin-left: 5.2rem;	
+	margin-right: 3rem;	
 }	
-
+	
+.noselect {
+	margin-right: 12rem;	
+}
+	
 .noselect {
   -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -2105,6 +2102,9 @@ a:hover:after {
 		Contact Desktop Page
    ========================================================================== */
 	
+#menu-bar_2 {
+	margin-top: -78rem;	
+}
 	
 .contact_title h2 {
 	color: black;
@@ -2133,7 +2133,7 @@ a:hover:after {
 	border: none;
 	color: white;
 	margin-bottom: 20px;
-	margin-left: 3rem;
+	margin-left: 15rem;
 }
 
 #email {
@@ -2141,22 +2141,22 @@ a:hover:after {
 	padding-right: 0rem;
 }
 textarea {
-	width: 82%;
-	max-height: 430px;
-	min-height: 200px;
+	width: 48%;
+	padding-bottom: 20rem;
+	padding-top: 2rem;
 	resize: vertical;
 	padding-left: 12px;
 	background-color: black;
 	border: none;
 	color: white;
 	margin-bottom: 20px;
-	margin-left: 3rem;
+	margin-left: 15rem;
 }
 
  .btn_c {
 	width: 120px;
 	height: 40px;
-	margin-left: 15rem;
+	margin-left: 26rem;
 	margin-bottom: 13rem;
 	 padding-bottom: 2.1rem;
 	background-color: red;
@@ -2167,16 +2167,14 @@ textarea {
 	transition .5s linear;
 }
 
-.map h4 p {
-	margin-top: -9rem;
-}
-
 .map h4 {
-   font-size: 1.7rem;
+   font-size: 2rem;
+	margin-left: 32rem;
 }
 
 .map p {
   font-size: 1.5rem;
+  margin-left: 29rem;	
 }	
 	
 .map iframe {
