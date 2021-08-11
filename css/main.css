@@ -565,7 +565,7 @@ footer .copyright {
 }
 
 #menu-bar_2 {
-	margin-top: -73rem; /*margin-top: 1rem;*/
+	margin-top: -69rem; /*margin-top: 1rem;*/
 	padding-left: 3rem;
 }
 
@@ -867,8 +867,12 @@ height: 80vh;		/*Allowd for all pictures to be the same height.*/
 	word-spacing: 1.0rem;
 }
 
+.intro {
+	margin-bottom: -43rem;
+}
+
 #menu-bar_2 {
-	margin-top: -73rem; /*margin-top: 1rem;*/
+	margin-top: 3rem; /*margin-top: 1rem;*/
 	padding-left: 3rem;
 }
 
@@ -1357,6 +1361,18 @@ button:focus svg {
 .nav {
 	font-size: 2rem;	
 }	
+
+li a {
+	margin-right: 6rem;
+}
+	
+
+	
+
+/* ==========================================================================
+  Price Tablet Page
+   ========================================================================== */
+	
 	
 	
 /*** End of the cover home page ***/
@@ -1423,8 +1439,6 @@ height: 46vh;		/*Allowd for all pictures to be the same height.*/
 }
 
 
-
-
 /* ==========================================================================
   Price Tablet Page
    ========================================================================== */
@@ -1443,11 +1457,11 @@ height: 46vh;		/*Allowd for all pictures to be the same height.*/
 #name_2 h1 {
 	font-size: 1.5rem;
 	margin-left: 6rem;
-	margin-bottom: 23rem;
+	margin-bottom: -23rem;
 	letter-spacing: 0.5rem;
 }
 	
-.intro {
+.intro_2 {
 	display: flex;
 	justify-content: center;
 	margin-bottom: -4rem;
@@ -1460,7 +1474,7 @@ height: 46vh;		/*Allowd for all pictures to be the same height.*/
 }
 
 #menu-bar_2  {
-	margin-top: -6rem;
+	margin-top: -3rem;
 	margin-left: 1rem;
 	margin-right: 7rem;
 }
@@ -1622,7 +1636,7 @@ h2 {
 }
 
 #menu-bar_2  {
-	margin-top: -80rem;
+	margin-top: -5rem;
 	margin-left: 1rem;
 	margin-right: 7rem;
 }
@@ -1819,9 +1833,7 @@ textarea {
 /* =========================================================================FOOTER FOR ALL PAGES REGARDING DESKTOP
    ========================================================================== */
 	
-	
-	
-  /* FOOTER */
+
  footer .content-wrapper {
     width: 65%;
     margin: 100px 0;
@@ -1857,12 +1869,21 @@ footer .social-icons {
     width: 100%;
  }
 	
+  /* End of footer */	
+	
 .intro {
 	margin-right: 3rem;	
-}	
+}
+	
+#job_title_2 h2 {
+	color: greenyellow;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.1rem;
+	margin-left: 1rem;	
+}
 	
 .noselect {
-	margin-right: 12rem;	
+	margin-right: 30rem;	
 }
 	
 .noselect {
@@ -1939,13 +1960,42 @@ button:focus svg {
 }	
 	
 	
-#menu-bar .nav {
-	margin-bottom: -16rem;
+#menu-bar {
+	margin-top: -31rem;
 	margin-left: 1rem;
 	margin-right: 7rem;
+	padding-left: 4rem;
 }	
 /*** End of the cover home page ***/
 
+	li a {
+	margin-right: 11rem;
+}
+	
+/* ==========================================================================
+		About Desktop Page
+   ========================================================================== */	
+	
+
+	
+.intro {
+	display: flex;
+	justify-content: center;
+	margin-bottom: -4rem;
+}	
+
+#job_title_2 h2 {
+	font-size: 1.4rem;
+	margin-top: -62rem;
+	margin-left: 6rem;
+}	
+	
+#menu-bar_2  {
+	margin-top: -6rem;
+	margin-left: 5rem;
+	margin-right: 7rem;
+}
+	
 .about {
 	margin-top: 20rem;
 }
