@@ -20,8 +20,6 @@ offers certain themes, colors, and picture frame layouts.
 The cool thing about the navigation is when the mouse hover overs each page option, the words go from white to blue and then 
 there is a red line that appears which is the website's theme colors.
 
-
-
 #### Software used:
 Adobe Dreamweaver (text-editor) and VS Code (text-editor)
 
@@ -34,6 +32,6 @@ I learn that I can use Bootstrap as an alternative from Flexbox to get the job d
 
 ##### Solutions/solving the issue:
 
-1. Try to keep widths 100%
+1. Use the Inspect Tool
 
 
