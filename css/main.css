@@ -2022,21 +2022,25 @@ a:hover:after {
   left: 0; 
 }
 
+.co.mb-4 {
+	padding-top: 4rem;
+}
+
 
 /* ==========================================================================
 		Contact Desktop Page
    ========================================================================== */
 
-   /*
-#menu-bar_2 {
+ 
+#name_2 {
 	margin-top: -78rem;	
-}*/
+}
 	
 .contact_title h2 {
 	color: black;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 3rem;
-	margin-left: 33rem;
+	margin-left: 29rem;
 	margin-top: -3rem;
 	margin-bottom: 5rem;
 }
@@ -2059,7 +2063,7 @@ a:hover:after {
 	border: none;
 	color: white;
 	margin-bottom: 20px;
-	margin-left: 26rem;
+	margin-left: 22rem;
 	width: 25%;
 }
 
@@ -2072,7 +2076,7 @@ textarea {
 	border: none;
 	color: white;
 	margin-bottom: 20px;
-	margin-left: 18rem;
+	margin-left: 13rem;
 	padding-bottom: 20rem;
 	padding-left: 12px;
 	padding-top: 2rem;
@@ -2083,7 +2087,7 @@ textarea {
  .btn_c {
 	width: 120px;
 	height: 40px;
-	margin-left: 26rem;
+	margin-left: 28rem;
 	margin-bottom: -3rem;
 	padding-bottom: 2.1rem;
 	background-color: red;
@@ -2096,12 +2100,12 @@ textarea {
 
 .map h4 {
    font-size: 2rem;
-   margin-left: 32rem;
+   margin-left: 29rem;
 }
 
 .map p {
   font-size: 1.5rem;
-  margin-left: 29rem;	
+  margin-left: 27rem;	
 }	
 	
 .map iframe {
